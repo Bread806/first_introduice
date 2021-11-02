@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+    integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" charset="UTF-8" src="js/JavaScript-2.js"></script>
+  <script>import songinfo from ('./song_information.js')</script>
+</head>
+
+<body>
+  <div style="width: 50%; height: 50%;margin-right: 10%;margin-left: 10%;align-items: center;">
+    <canvas id="myChart" width="300" height="150"></canvas>
+  </div>
+
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['夜に駆ける', 'あの夢をなぞって', 'ハルジオン', 'たぶん', '群青', 'ハルカ', '怪物', '優しい彗星', 'もう少しだけ', 'アンコール', '三原色'],
+        datasets: [{
+          label: ['# Song Viewers', '#123'],
+          data: [254231115, 40611404, 63346588, 43809145, 60421439, 29815806, 145580521, 21538588, 21478996, 39238248, 22551402],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        layout: {
+            padding: {
+                left: 450
+            }
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>

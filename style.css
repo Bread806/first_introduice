@@ -1,0 +1,59 @@
+.demo-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.demo-bg {
+  opacity: 0.6;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.demo-content {
+  position: relative;
+}
+
+.patterns {
+  height: 100vh;
+}
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #80767b;
+  font-size: 150px;
+  font-weight: 700;
+  stroke-width: 3;
+  -webkit-animation: textAnimate 5s infinite alternate;
+  animation: textAnimate 5s infinite alternate;
+}
+
+@-webkit-keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: #394041;
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: rgba(148, 222, 235, 0);
+  }
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: #394041;
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: rgba(148, 222, 235, 0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
