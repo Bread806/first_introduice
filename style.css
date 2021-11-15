@@ -28,7 +28,7 @@ svg text {
   font-weight: 700;
   stroke-width: 3;
   -webkit-animation: textAnimate 5s infinite alternate;
-  animation: textAnimate 5s infinite alternate;
+          animation: textAnimate 5s infinite alternate;
 }
 
 @-webkit-keyframes textAnimate {

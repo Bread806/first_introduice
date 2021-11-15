@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -9,10 +9,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
- iframe {
-  width: 100vw;
-  height: 5vw;
-} 
 
 header {
   background-color: #666;
@@ -24,16 +20,32 @@ header {
   margin-left: 25%;
 }
 
-nav {
-  float: left;
-  width: 30%;
-  height: 300px;
-  padding: 20px;
+nav a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  font-size: 50px;
+  padding: 10px;
+  font-family: fantasy;
 }
 
-nav ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
+}
+
+nav a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.flex-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 article {
