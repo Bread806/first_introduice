@@ -1,0 +1,56 @@
+body {
+  background-color:gray;
+  overflow-x:hidden;
+}
+
+iframe {
+  height: 300px;
+  width: 900px;
+}
+
+nav a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  font-size: 50px;
+  padding: 10px;
+  font-family: fantasy;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.flex-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+
+canvas#canvas {
+  display: block;
+}
+canvas{
+  position:fixed;
+  z-index: -1;
+  background-image: url("tt.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+

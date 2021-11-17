@@ -1,6 +1,17 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+canvas#canvas {
+  display: block;
+}
+canvas {
+  position: fixed;
+  z-index: -1;
+  background-image: url("tt.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
 }
 
 body {
@@ -44,8 +55,8 @@ nav a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 article {
