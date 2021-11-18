@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #666;
+
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -99,19 +99,6 @@ iframe {
   height: 5vw;
 } 
 
-@keyframes textAnimate {
-    0% {
-        stroke-dasharray: 0 50%;
-        stroke-dashoffset: 20%;
-        fill: hsl(189, 68%, 75%);
-    }
-
-    100% {
-        stroke-dasharray: 50% 0;
-        stroke-dashoffstet: -20%;
-        fill: hsla(189, 68%, 75%, 0%);
-    }
-}
 
 footer {
     background-color: #777;
