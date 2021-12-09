@@ -52,24 +52,6 @@
 
     </div>
 	
-	
-<!--<?php
-$con = @mysqli_connect(
-	'us-cdbr-east-04.cleardb.com',
-	'b33535106a6db3',
-	'b0dfd127',
-	'`heroku_d20f5ec8b2ab248`'
-);
-if(!$con){
-	echo "error connect to 45P database! "
-	exit();
-}
-else{
-	echo "Hi! I am 45P!";
-}
-mysqli_close($con);
-?> -->
-
 <?php
 // 建立MySQL的資料庫連接 
 $link = @mysqli_connect( 
@@ -86,6 +68,8 @@ else {
 }
 mysqli_close($link);  // 關閉資料庫連接
 ?>
+
+
 </body>
 
 </html>
