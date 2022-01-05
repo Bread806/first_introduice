@@ -70,7 +70,7 @@ if ( !$link ) {
 }
 else {
    echo "與45Pdatabase連線成功<br/>";
-   echo "目前連線伺服器數量:6"
+   echo "目前連線伺服器數量:6";
 }
 mysqli_close($link);  // 關閉資料庫連接
 ?>
