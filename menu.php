@@ -49,6 +49,11 @@
         </div>
         <!-- <div class="col-3"></div> -->
       </div>
+      <footer style="background-color:rgba(206, 190, 190, 0.342);font-size: 10px;text-align:center;line-height: 12px;">
+        <div>This website is create by.Bread806</div>
+        <a style="color:palegreen;margin-right: 5px;" href="https://discord.com/api/oauth2/authorize?client_id=838845267045384203&permissions=292058195968&scope=bot">discord bot</a>
+        <a style="color:palegreen;" href="https://hackmd.io/?nav=overview">Bread806 blog</a>
+      </footer>
 
     </div>
 	
@@ -64,7 +69,8 @@ if ( !$link ) {
    exit();
 }
 else {
-   echo "MySQL資料庫test連接成功!<br/>";
+   echo "與45Pdatabase連線成功<br/>";
+   echo "目前連線伺服器數量:6"
 }
 mysqli_close($link);  // 關閉資料庫連接
 ?>
